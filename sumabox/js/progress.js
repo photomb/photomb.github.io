@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const videoBG = document.getElementById("background-video")
     const audioIndex = document.getElementById("wiiSports")
-    const letsPlayButton = new Audio('../media/mouse-start.mp3')
+    const letsPlayButton = new Audio('media/mouse-start.mp3')
     const preloader = document.getElementById("preloader")
     const progressFill = document.querySelector(".progress-fill")
     const loadingText = document.getElementById("loading-text")
@@ -9,12 +9,12 @@ document.addEventListener("DOMContentLoaded", () => {
     
     const preloadImages = [
         'img/close.png',
-        '../img/joker.png',
-        '../img/match.png',
-        '../img/splash_white_screen.png',
-        '../img/volume-mute.png',
-        '../img/volume-on.png',
-        '../media/twinkle.gif'
+        'img/joker.png',
+        'img/match.png',
+        'img/splash_white_screen.png',
+        'img/volume-mute.png',
+        'img/volume-on.png',
+        'media/twinkle.gif'
     ]
 
     let progress = 0
