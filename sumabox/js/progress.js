@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const sendGameButton = document.getElementById("sendGameButton")
     
     const preloadImages = [
-        '../img/close.png',
+        'img/close.png',
         '../img/joker.png',
         '../img/match.png',
         '../img/splash_white_screen.png',
