@@ -66,17 +66,16 @@ export function specialBtn() {
     
     if (valueBtn4 == 0) {
         document.querySelectorAll('.special').forEach(button => { 
-            button.disabled = false, button.style.opacity = 1
+            button.disabled = false,
+            button.style.opacity = 1,
+            document.getElementById('btn4').innerHTML = '<img id="joker" src="./media/joker_pulse.gif" alt="joker_pulse">',
             audioSpecial.play()
             
             // gif effect //
             const gifEffect = document.createElement('img')
-            gifEffect.src = './media/twinkle.gif'
-            gifEffect.alt = 'twinkle'
-            gifEffect.style.position = 'absolute'
-            gifEffect.style.zIndex = 1
-            gifEffect.style.top = '0'
-            gifEffect.style.left = '40%'
+            gifEffect.src = './media/joker_eclat.gif'
+            gifEffect.alt = 'joker_eclat'
+            gifEffect.classList = 'pulse'
 
             const specialEffect = button.parentNode
             specialEffect.style.position = 'relative'
@@ -84,16 +83,16 @@ export function specialBtn() {
 
             setTimeout(() => {
                 gifEffect.remove()
-            }, 500)
+            }, 2000) // remove after 2 seconds
         })
     } else {
         document.querySelectorAll('.special').forEach(button => { 
             button.disabled = true, button.style.opacity = 0.3
+            document.getElementById('btn4').innerHTML ='<img id="joker" src="./img/joker.png" alt="joker">'
         })
     }
     
-    document.getElementById('btn4').value = valueBtn4
-    document.getElementById('btn4').innerHTML ='<img id="joker" src="./img/joker.png" alt="joker">'
+    //document.getElementById('btn4').value = valueBtn4
 
     console.log(" Special Button : " + valueBtn4)
 }
